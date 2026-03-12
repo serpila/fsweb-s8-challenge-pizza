@@ -194,6 +194,16 @@ export default function OrderPizza({ setOrderData }) {
                 </div>
 
                 <div className='order'>
+
+                    <div className='amount-all'>
+                        <div className='amount'>
+                            <button type='button' onClick={() => setAdet(adet > 1 ? adet - 1 : 1)}>-</button>
+                            <span>{adet}</span>
+                            <button type='button' onClick={() => setAdet(adet + 1)}>+</button>
+                        </div>
+                        <button className="order-btn mobile-btn" disabled={!gecerliForm}>SİPARİŞ VER</button>
+                    </div>
+
                     <div className='total'>
                         <div className='total-info'>
                             <h4>Sipariş Toplamı</h4>
@@ -209,14 +219,7 @@ export default function OrderPizza({ setOrderData }) {
                         <button className="order-btn desktop-btn" disabled={!gecerliForm}>SİPARİŞ VER</button>
                     </div>
 
-                    <div className='amount-all'>
-                        <div className='amount'>
-                            <button type='button' onClick={() => setAdet(adet > 1 ? adet - 1 : 1)}>-</button>
-                            <span>{adet}</span>
-                            <button type='button' onClick={() => setAdet(adet + 1)}>+</button>
-                        </div>
-                        <button className="order-btn mobile-btn" disabled={!gecerliForm}>SİPARİŞ VER</button>
-                    </div>
+
                 </div>
 
             </form>

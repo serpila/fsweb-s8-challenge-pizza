@@ -22,14 +22,14 @@ describe("Pizza sipariş Formu", () => {
     it("Formu eksiksiz gönderebiliyor mu?", () => {
         cy.get("#isim").type("wit");
         cy.get("#orta").check();
-        cy.get("select").select("ince");
+        cy.get("select").select("İnce");
 
         cy.contains("label","Sosis").find("input[type='checkbox']").check();
         cy.contains("label","Soğan").find("input[type='checkbox']").check();
         cy.contains("label","Sucuk").find("input[type='checkbox']").check();
         cy.contains("label","Biber").find("input[type='checkbox']").check();
 
-        cy.get(".order-btn").should("not.be.disabled").click();
+        cy.get(".order-btn").should("not.be.disabled").eq(1).click();
         cy.url().should("include","/success")
     });
 });

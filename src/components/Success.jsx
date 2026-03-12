@@ -8,7 +8,7 @@ export default function Success({ orderData }) {
             <img src="./images/iteration-1-images/logo.svg" alt="Teknolojik Yemekler" className="logo" />
             <div className="thanks">
                 
-                <p className='slogan'>lezzetin yolda</p>
+                <p className='slogan-success'>lezzetin yolda</p>
                 <h1 className='mobile-h1'>TEBRİKLER!</h1>
                 <h1>SİPARİŞİNİZ<br className="mediabreak" /> ALINDI!</h1>
                
