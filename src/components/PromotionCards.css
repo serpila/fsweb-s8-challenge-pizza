@@ -1,0 +1,99 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 5rem auto;
+}
+
+.card-red {
+  flex: 2;
+}
+
+.card-wb {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1rem;
+}
+
+.card-red,
+.card-top,
+.card-bottom {
+  position: relative;
+}
+
+.cards img {
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  inset: 0;
+  padding: 2rem;
+  color: white;
+}
+
+.card-wb .content {
+  justify-content: space-between;
+}
+
+.btn-card {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  background: white;
+  align-self: flex-start;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  color: red;
+}
+
+.cards span {
+  color: red;
+  font-weight: bold;
+}
+
+.card-red .content h2 {
+  font-family: "Quattrocento", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 68px;
+  margin-bottom: 1.5rem;
+}
+
+.card-red .content p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.card-top .content h3 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 32px;
+}
+
+.card-bottom .content h3 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 32px;
+  color: black;
+}
+@media(max-width:768px){
+  .cards{
+  flex-direction: column;
+}
+.cards img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+}
